@@ -1,0 +1,90 @@
+body {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-wrap {
+    width: 177px;
+    height: 100%;
+}
+
+.content-wrap {
+    flex-grow: 1;
+    position: relative;
+}
+
+/* ============================================================== */
+/* =============== TOPBAR ======================================= */
+/* ============================================================== */
+
+.znPortal-topbar {
+    width: 100%;
+    height: 50px;
+    background-color: #009639;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.znPortal-topbar__logo-container {
+    height: 100%;
+    width: 177px;
+    background-color: #008733;
+    box-sizing: border-box;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.znPortal-topbar__logo {
+    width: 100%;
+}
+
+.znPortal-topbar__exit-btn {
+    width: 17px;
+    height: 17px;
+    padding: 0;
+    border: none;
+    background: url(./img/exit-icon.svg) center/contain no-repeat transparent;
+    cursor: pointer;
+}
+
+.znPortal-topbar__exit-btn:focus {
+    outline: none;
+}
+
+.znPortal-topbar__btns-container {
+    padding: 0 20px;
+}
+
+/* ============================================================== */
+/* =============== NAVBAR ======================================= */
+/* ============================================================== */
+
+.znPortal-nav__menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+    background-color: #44505c;
+    height: 100%;
+}
+
+.znPorlal-nav__menu-item {
+    font-family: PF Centro Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    color: #ffffff;
+    box-sizing: border-box;
+    padding: 20px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.znPorlal-nav__menu-item--active {
+    border-bottom: 3px solid #fbb900;
+    background-color: #303942;
+}

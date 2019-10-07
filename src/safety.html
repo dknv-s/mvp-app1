@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="./style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="production-modal">
+            <p class="production-modal__title production-modal__title--green">
+                ЦПС
+            </p>
+            <div class="production-modal__content">
+                <div class="production-modal__chart">
+                    <div class="production-modal__chart-container"></div>
+                </div>
+                <div class="production-modal__params-block">
+                    <table
+                        class="production-modal__table production-modal__table--safety"
+                    >
+                        <tbody>
+                            <tr
+                                class="production-modal__table-tr production-modal__table-tr--borderless"
+                            >
+                                <td
+                                    class="production-modal__table-td production-modal__table-td--green production-modal__table-corner--left production-modal__table-col1"
+                                    rowspan="5"
+                                >
+                                    100%
+                                </td>
+                                <td
+                                    class="production-modal__table-td production-modal__table-td--white production-modal__table-col2"
+                                >
+                                    <p
+                                        class="production-modal__table-param-name"
+                                    >
+                                        Технологическая
+                                    </p>
+                                    <p class="production-modal__table-param">
+                                        <span>100%</span>
+                                        <span
+                                            class="production-modal__table-param-after"
+                                            >0.7</span
+                                        >
+                                    </p>
+                                </td>
+                                <td
+                                    class="production-modal__table-td production-modal__table-col3"
+                                >
+                                    0
+                                </td>
+                                <td
+                                    class="production-modal__table-td production-modal__table-corner--top-right production-modal__table-col4"
+                                >
+                                    минут работы за пределами уставки
+                                </td>
+                            </tr>
+                            <tr class="production-modal__table-tr">
+                                <td
+                                    class="production-modal__table-td production-modal__table-td--white production-modal__table-col2"
+                                    rowspan="2"
+                                >
+                                    <p
+                                        class="production-modal__table-param-name"
+                                    >
+                                        Механическая
+                                    </p>
+                                    <p class="production-modal__table-param">
+                                        <span>100%</span>
+                                        <span
+                                            class="production-modal__table-param-after"
+                                            >0.2</span
+                                        >
+                                    </p>
+                                </td>
+                                <td
+                                    class="production-modal__table-td production-modal__table-col3"
+                                >
+                                    0
+                                </td>
+                                <td
+                                    class="production-modal__table-td production-modal__table-col4"
+                                >
+                                    невыполненных ТО
+                                </td>
+                            </tr>
+                            <tr class="production-modal__table-tr">
+                                <td
+                                    class="production-modal__table-td production-modal__table-col3"
+                                >
+                                    0
+                                </td>
+                                <td
+                                    class="production-modal__table-td production-modal__table-col4"
+                                >
+                                    единицы оборудования с истекшим сроком
+                                    службы
+                                </td>
+                            </tr>
+                            <tr class="production-modal__table-tr">
+                                <td
+                                    class="production-modal__table-td production-modal__table-td--white production-modal__table-col2"
+                                >
+                                    <p
+                                        class="production-modal__table-param-name"
+                                    >
+                                        Метрологическая
+                                    </p>
+                                    <p class="production-modal__table-param">
+                                        <span>100%</span>
+                                        <span
+                                            class="production-modal__table-param-after"
+                                            >0.05</span
+                                        >
+                                    </p>
+                                </td>
+                                <td
+                                    class="production-modal__table-td production-modal__table-col3"
+                                >
+                                    0
+                                </td>
+                                <td
+                                    class="production-modal__table-td production-modal__table-col4"
+                                >
+                                    неповеренных приборов
+                                </td>
+                            </tr>
+                            <tr class="production-modal__table-tr">
+                                <td
+                                    class="production-modal__table-td production-modal__table-td--white  production-modal__table-col2"
+                                >
+                                    <p
+                                        class="production-modal__table-param-name"
+                                    >
+                                        Пожарная
+                                    </p>
+                                    <p class="production-modal__table-param">
+                                        <span>100%</span>
+                                        <span
+                                            class="production-modal__table-param-after"
+                                            >0.7</span
+                                        >
+                                    </p>
+                                </td>
+                                <td
+                                    class="production-modal__table-td  production-modal__table-col3"
+                                >
+                                    0
+                                </td>
+                                <td
+                                    class="production-modal__table-td production-modal__table-corner--bottom-right  production-modal__table-col4"
+                                >
+                                    сработок датчиков
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p
+                    class="production-modal__title production-modal__title--second"
+                >
+                    СПТ
+                </p>
+                <div class="production-modal__chart">
+                    <div class="production-modal__chart-container"></div>
+                </div>
+                <div class="production-modal__params-block">
+                    <table
+                        class="production-modal__table production-modal__table--safety"
+                    >
+                        <tbody>
+                            <tr
+                                class="production-modal__table-tr production-modal__table-tr--borderless"
+                            >
+                                <td
+                                    class="production-modal__table-td production-modal__table-td--yellow production-modal__table-corner--left production-modal__table-col1"
+                                    rowspan="5"
+                                >
+                                    98%
+                                </td>
+                                <td
+                                    class="production-modal__table-td production-modal__table-td--white production-modal__table-col2"
+                                >
+                                    <p
+                                        class="production-modal__table-param-name"
+                                    >
+                                        Технологическая
+                                    </p>
+                                    <p class="production-modal__table-param">
+                                        <span>100%</span>
+                                        <span
+                                            class="production-modal__table-param-after"
+                                            >0.7</span
+                                        >
+                                    </p>
+                                </td>
+                                <td
+                                    class="production-modal__table-td production-modal__table-col3"
+                                >
+                                    0
+                                </td>
+                                <td
+                                    class="production-modal__table-td production-modal__table-corner--top-right production-modal__table-col4"
+                                >
+                                    минут работы за пределами уставки
+                                </td>
+                            </tr>
+                            <tr class="production-modal__table-tr">
+                                <td
+                                    class="production-modal__table-td production-modal__table-td--white production-modal__table-col2"
+                                    rowspan="2"
+                                >
+                                    <p
+                                        class="production-modal__table-param-name"
+                                    >
+                                        Механическая
+                                    </p>
+                                    <p class="production-modal__table-param">
+                                        <span>96%</span>
+                                        <span
+                                            class="production-modal__table-param-after"
+                                            >0.2</span
+                                        >
+                                    </p>
+                                </td>
+                                <td
+                                    class="production-modal__table-td production-modal__table-col3"
+                                >
+                                    1
+                                </td>
+                                <td
+                                    class="production-modal__table-td production-modal__table-col4"
+                                >
+                                    невыполненных ТО
+                                </td>
+                            </tr>
+                            <tr class="production-modal__table-tr">
+                                <td
+                                    class="production-modal__table-td production-modal__table-col3"
+                                >
+                                    0
+                                </td>
+                                <td
+                                    class="production-modal__table-td production-modal__table-col4"
+                                >
+                                    единицы оборудования с истекшим сроком
+                                    службы
+                                </td>
+                            </tr>
+                            <tr class="production-modal__table-tr">
+                                <td
+                                    class="production-modal__table-td production-modal__table-td--white production-modal__table-col2"
+                                >
+                                    <p
+                                        class="production-modal__table-param-name"
+                                    >
+                                        Метрологическая
+                                    </p>
+                                    <p class="production-modal__table-param">
+                                        <span>100%</span>
+                                        <span
+                                            class="production-modal__table-param-after"
+                                            >0.05</span
+                                        >
+                                    </p>
+                                </td>
+                                <td
+                                    class="production-modal__table-td production-modal__table-col3"
+                                >
+                                    0
+                                </td>
+                                <td
+                                    class="production-modal__table-td production-modal__table-col4"
+                                >
+                                    неповеренных приборов
+                                </td>
+                            </tr>
+                            <tr class="production-modal__table-tr">
+                                <td
+                                    class="production-modal__table-td production-modal__table-td--white  production-modal__table-col2"
+                                >
+                                    <p
+                                        class="production-modal__table-param-name"
+                                    >
+                                        Пожарная
+                                    </p>
+                                    <p class="production-modal__table-param">
+                                        <span>100%</span>
+                                        <span
+                                            class="production-modal__table-param-after"
+                                            >0.7</span
+                                        >
+                                    </p>
+                                </td>
+                                <td
+                                    class="production-modal__table-td  production-modal__table-col3"
+                                >
+                                    0
+                                </td>
+                                <td
+                                    class="production-modal__table-td production-modal__table-corner--bottom-right  production-modal__table-col4"
+                                >
+                                    сработок датчиков
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="production-modal">
+            <p class="production-modal__title production-modal__title--gray">
+                РВП
+            </p>
+            <div
+                class="production-modal__content production-modal__content--empty"
+            >
+                <div class="production-modal__empty-block">
+                    Внедрение продукта запланированно на 2020 год
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
