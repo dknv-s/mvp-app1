@@ -51,6 +51,11 @@ body {
 }
 
 .production-label__params-divider {
+    display: block;
+    width: 2px;
+    height: 30px;
+    margin: 0 5px;
+    background-color: #fff;
 }
 
 .production-label__name {
@@ -64,6 +69,7 @@ body {
     font-size: 18px;
     padding: 0;
     margin: 0;
+    display: flex;
 }
 .production-label__percents {
     font-weight: bold;
@@ -156,4 +162,106 @@ body {
 }
 .production-label--empty .production-label__icon {
     background-color: rgba(120, 120, 120, 1);
+}
+
+.blink-animation {
+    animation: blink 1s linear infinite;
+}
+
+.production-label__messages {
+    position: absolute;
+    top: -10px;
+    left: -5px;
+    width: 35px;
+    height: 20px;
+    border-radius: 4px;
+    background-color: tomato;
+    color: #ffffff;
+    font-size: 11px;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.production-label__circle {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    margin-right: 5px;
+}
+
+.production-label__circle--green {
+    background-color: #009639;
+}
+
+.production-label__circle--red {
+    background-color: #eb0001;
+}
+
+.production-label--service {
+    width: 115px;
+}
+
+.production-label--service .production-label__left {
+    border-radius: 4px;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    padding-left: 35px;
+    width: 100%;
+}
+
+.production-label__icon--yellow {
+    background-color: #f1b200;
+}
+
+.production-label__param-title {
+    margin: 0;
+}
+
+.production-label--simple .production-label__left {
+    width: 100%;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.production-label__content {
+    background-color: rgba(68, 80, 92, 0.5);
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+.param-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.param-wrap__title {
+    font-size: 12px;
+    margin: 0;
+    line-height: 1;
+    text-align: center;
+}
+
+.param-wrap__param {
+    margin: 0;
+    line-height: 1;
 }

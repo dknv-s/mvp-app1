@@ -58,12 +58,10 @@ body {
 }
 .production-modal__chart-container {
     height: 128px;
-    border: 1px dashed lightcoral;
 }
 
 .production-modal__cam-container {
     height: 145px;
-    border: 1px dashed lightcoral;
 }
 
 .production-modal__fond {
@@ -87,6 +85,8 @@ body {
     line-height: 30px;
     color: #ffffff;
     text-align: left;
+    display: flex;
+    justify-content: space-between;
 }
 
 .production-modal__table {
@@ -95,7 +95,7 @@ body {
 }
 
 .production-modal__table--fond .production-modal__table-td:first-child {
-    width: 56%;
+    /* width: 56%; */
 }
 
 .production-modal__table--fond .production-modal__table-td {
@@ -162,20 +162,6 @@ body {
     text-align: left;
 }
 
-.production-modal__params-label {
-    display: inline-block;
-    width: 125px;
-    height: 27px;
-    border-radius: 3px;
-    font-family: PF Centro Sans Pro;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    color: #f4f7fb;
-    background-color: #009639;
-    vertical-align: middle;
-}
-
 .production-modal__lable-wrap {
     width: 100%;
     height: 100%;
@@ -186,11 +172,7 @@ body {
     box-sizing: border-box;
 }
 
-.production-modal__params-label--low {
-    background-color: #e16400;
-}
-
-.production-modal__params-label--low .production-modal__params-label-arrow {
+.production-modal__label-diff-wrap--low .production-modal__params-label-arrow {
     width: 0;
     height: 0;
     border-style: solid;
@@ -201,10 +183,6 @@ body {
 
 .production-modal__params-label-first {
     padding-right: 8px;
-    border-right: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.production-modal__params-label-second {
 }
 
 .production-modal__params-label-arrow {
@@ -347,4 +325,152 @@ body {
 
 .production-modal__title--gray {
     background-color: #aaa;
+}
+
+/* ======================================== */
+/* ======================================== */
+/* ======================================== */
+/* ======================================== */
+
+.production-modal__title--dark {
+    background-color: #303942;
+}
+
+.production-modal--cams {
+    width: auto;
+}
+
+.production-modal--cams .production-modal__content {
+    width: 605px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    padding-bottom: 0;
+    align-items: center;
+}
+
+.production-modal__cam-widget {
+    background-color: #e3e7ec;
+    border-radius: 3px;
+    width: 280px;
+    font-family: PF Centro Sans Pro;
+    margin-bottom: 15px;
+}
+
+.production-modal__cam-widget:nth-child(2n - 1) {
+    margin-right: 15px;
+}
+
+.production-modal__cam-widget-title {
+    font-family: PF Centro Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #222222;
+    height: 30px;
+    text-align: left;
+}
+
+.production-modal__cam-widget-subtitle {
+    background-color: #303942;
+    height: 30px;
+    box-sizing: border-box;
+    padding: 0 10px;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: PF Centro Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+}
+
+.production-modal__cam-widget-video {
+    height: 140px;
+    border: 1px dashed tomato;
+}
+
+.production-modal__cam-widget-params {
+}
+
+.production-modal__cam-widget-params table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.production-modal__cam-widget-params tr {
+    border-bottom: 1px solid #ced3da;
+}
+
+.production-modal__cam-widget-params tr:first-child {
+    font-family: PF Centro Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+}
+
+.production-modal__cam-widget-params tr:last-child {
+    border-bottom: none;
+    font-family: PF Centro Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.production-modal__cam-widget-params td {
+    height: 22px;
+    width: 33%;
+    text-align: center;
+    border-right: 1px solid #ced3da;
+    padding: 0;
+    margin: 0;
+}
+
+.production-modal__cam-widget-params td:last-child {
+    border: none;
+}
+
+.production-modal--cams-zndh {
+    width: auto;
+}
+
+.production-modal--cams-zndh .production-modal__content {
+    width: 310px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    padding-bottom: 0;
+    align-items: center;
+}
+
+.production-modal--cams-zndh .production-modal__cam-widget {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.production-modal__label-diff-param1 {
+}
+
+.production-modal__label-diff-param2 {
+    display: inline-block;
+    border-radius: 3px;
+    background-color: #009639;
+    color: #ffffff;
+    padding-right: 6px;
+    width: 90px;
+}
+
+.production-modal__label-diff-wrap {
+    display: flex;
+    align-items: center;
+    padding: 0 4px;
+    justify-content: center;
+}
+
+.production-modal__label-diff-wrap--low .production-modal__label-diff-param2 {
+    background-color: #e16400;
 }
